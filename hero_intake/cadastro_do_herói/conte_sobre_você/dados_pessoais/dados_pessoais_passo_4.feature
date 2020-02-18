@@ -21,25 +21,14 @@ Funcionalidade: Dados pessoais - Passo 4
       | apenas em campos não obrigatórios  | erro informando obrigatoriedade             | Salvar e continuar        |
       | apenas em campos obrigatórios      | uma mensagem de sucesso, salvando o contato | Salvar e continuar        |
 
+  Cenario: Validar adição de contato igual ao número particular
+
+    Quando tento adicionar um contato preenchendo os dados de cadastro "com um número igual ao do passo anterior"
+    Então o cadastro apresentará "um erro informando que esse é meu número particular"
+
   Esquema do Cenario: Validar adição de outro contato
 
     Quando clico em adicionar outro contato
-    E tento adicionar um contato preenchendo os dados de cadastro "<forma_de_preenchimento>"
-    Então o cadastro apresentará "<resultado>"
-    Mas a alteração só será efetivada ao clicar em "<CTA>"
-
-    Exemplos:
-      | forma_de_preenchimento             | resultado                                   | CTA                       |
-      | incorretamente                     | erro nos campos inválidos                   | Salvar e terminar depois  |
-      | apenas em campos não obrigatórios  | erro informando obrigatoriedade             | Salvar e terminar depois  |
-      | apenas em campos obrigatórios      | uma mensagem de sucesso, salvando o contato | Salvar e terminar depois  |
-      | incorretamente                     | erro nos campos inválidos                   | Salvar e continuar        |
-      | apenas em campos não obrigatórios  | erro informando obrigatoriedade             | Salvar e continuar        |
-      | apenas em campos obrigatórios      | uma mensagem de sucesso, salvando o contato | Salvar e continuar        |
-
-  Esquema do Cenario: Validar edição de contato
-
-    Quando clico em editar um contato salvo
     E tento adicionar um contato preenchendo os dados de cadastro "<forma_de_preenchimento>"
     Então o cadastro apresentará "<resultado>"
     Mas a alteração só será efetivada ao clicar em "<CTA>"

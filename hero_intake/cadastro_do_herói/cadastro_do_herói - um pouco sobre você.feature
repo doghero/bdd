@@ -21,6 +21,7 @@ Funcionalidade: Cadastro do herói
     E que estou na etapa de "Dados Pessoais" do cadastro de heróis do hero intake
     Quando preencho parcialmente a etapa, salvando a mesma para terminar depois
     Então volto para a tela de cadastro de heróis com a opção de continuar a edição do ponto que parei
+    E a barra de progresso da etapa é atualizada
     E as demais etapas estarão desabilitadas sem nenhum CTA disponível
 
   Cenario: Conclusão de etapa
@@ -29,6 +30,7 @@ Funcionalidade: Cadastro do herói
     Então ao acessá-la novamente, sua navegação superior entre os passos será alterada visualmente
     E o botão de salvar e terminar depois não será mais visivel
     E alterações serão possíveis apenas preenchendo corretamente todos os campos obrigatórios e salvando
+    E ao voltar para a tela de cadastro, a barra de progresso será concluída
 
   Cenário: Ícone de ajuda
     Dado que estou logado na doghero com um novo usuário

@@ -32,16 +32,18 @@ Funcionalidade: Dados pessoais - Passo 3
     E um campo com o código de verificação é apresentado
     E ao informar o código "<tipo_de_código>" e clicar em verificar o número
     Então a mensagem de "<resultado>" é apresentada
+    E o cta de verificação "<cta_verificação>"
+    E o cta para continuar "<cta_continuar>
 
     Exemplos:
 
-    | tipo_pais | tipo_de_código | resultado           |
-    | Brasil    | correto        | sucesso             |
-    | Brasil    | incorreto      | erro na verificação |
-    | Argentina | correto        | sucesso             |
-    | Argentina | incorreto      | erro na verificação |
-    | Mexico    | correto        | sucesso             |
-    | Mexico    | incorreto      | erro na verificação |
+    | tipo_pais | tipo_de_código | resultado           | cta_verificação | cta_continuar     |
+    | Brasil    | correto        | sucesso             | desaparece      | é habilitado      |
+    | Brasil    | incorreto      | erro na verificação | é apresentado   | fica desabilitado |
+    | Argentina | correto        | sucesso             | desaparece      | é habilitado      |
+    | Argentina | incorreto      | erro na verificação | é apresentado   | fica desabilitado |
+    | Mexico    | correto        | sucesso             | desaparece      | é habilitado      |
+    | Mexico    | incorreto      | erro na verificação | é apresentado   | fica desabilitado |
 
   Esquema do Cenario: Verificar reenvio de SMS
 
@@ -64,6 +66,8 @@ Funcionalidade: Dados pessoais - Passo 3
     E estou na etapa de 'Dados Pessoais', "passo 3", do cadastro de heróis do hero intake
     Quando clico no botão de ajuda
     Então informações são apresentadas detalhando o motivo da validação do número de contato
+    E clico no botão de fechar
+    E a tela de ajuda é fechada
 
   Cenario: Quantidade de tentativas - A DEFINIR
 

@@ -33,7 +33,6 @@ Funcionalidade: Dados pessoais - Passo 1
     E se eu altero o pin do mapa
     Então o campo de endereço também é alterado
 
-
   Cenario: Validar preenchimento de endereços - Localização manual - Seus dados
     E estou na etapa de 'Dados Pessoais', "passo 1", do cadastro de heróis do hero intake
     Quando clico para preencher meu endereço
