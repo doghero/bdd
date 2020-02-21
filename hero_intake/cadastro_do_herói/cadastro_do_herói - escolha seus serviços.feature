@@ -21,13 +21,14 @@ Funcionalidade: Cadastro do herói - escolha seus serviços
     Dado que estou logado na doghero com um novo usuário
     E acesso a tela de cadastro de heróis no hero intake
     Quando concluo com sucesso todas as etapas de 'conte um pouco sobre você'
-    Então os serviços "<services>" são liberados através de um CTA para edição de acordo com a localização "<location>"
+    Então os serviços relativo ao país "<país>" são liberados através de um CTA para edição
+    E eles poderãm ser acessados e preenchidos de maneira não linear
 
   Exemplos:
-    | services | location |
-    |          | AR       |
-    |          | MX       |
-    |          | BR       |
+    | país  |
+    | AR    |
+    | MX    |
+    | BR    |
 
   Esquema do Cenario: Cadastro parcial
 

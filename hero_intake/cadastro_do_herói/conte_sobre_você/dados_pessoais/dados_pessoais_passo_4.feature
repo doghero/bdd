@@ -46,7 +46,8 @@ Funcionalidade: Dados pessoais - Passo 4
 
     E tenho um contato já adicionado em minha lista
     Quando clico em excluir o mesmo
-    Então o sistema excluirá
+    Então o sistema apresentará um alerta de confirmação
+    E ao confirmar o alerta, o sistema excluirá
     Mas a alteração só será efetivada ao clicar em "<CTA>"
 
     Exemplos:

@@ -13,7 +13,7 @@ Funcionalidade: Cadastro do herói
     Quando acesso a tela de cadastro de heróis no hero intake
     E eu posso acessar apenas a primeira etapa, de 'Dados Pessoais', através do botão 'começar'
     E as demais etapas estarão desabilitadas sem nenhum CTA disponível
-    Mas contanto que a etapa seja preenchida e concluída com sucesso
+    Mas contanto que a etapa seja preenchida seja concluída com sucesso
     Então a próxima etapa será liberada para edição, e assim sucessivamente
 
   Cenario: Continuação da etapa
@@ -30,13 +30,14 @@ Funcionalidade: Cadastro do herói
     Então ao acessá-la novamente, sua navegação superior entre os passos será alterada visualmente
     E o botão de salvar e terminar depois não será mais visivel
     E alterações serão possíveis apenas preenchendo corretamente todos os campos obrigatórios e salvando
-    E ao voltar para a tela de cadastro, a barra de progresso será concluída
+    E ao voltar para a tela de cadastro, a barra de progresso da etapa em questão estará concluída
 
   Cenário: Ícone de ajuda
     Dado que estou logado na doghero com um novo usuário
     E que estou na tela de cadastro de heróis no hero intake
     Quando acesso o ícone de ajuda
     Então informações sobre a etapa de cadastro de heróis são apresentadas em uma nova tela
+    E ao clicar em fechar, voltarei para a tela anterior
 
 
 
